@@ -1,7 +1,12 @@
 import Image from "next/image";
 import Comparison from "./Comparison";
 import OrgView from "./OrgView";
- 
+
+// @next-codemod-ignore Cache Components adoption: this segment temporarily allows blocking.
+// Remove this opt-out after verifying the segment passes validation without it.
+// See: https://nextjs.org/docs/app/guides/migrating-to-cache-components
+// export const instant = false;
+
 const engines = [
   { icon: "🎙️", ar: "المرافقة المعرفية الذكية", en: "AI Knowledge Shadowing", p: "مقابلات صوتية أو كتابية يطرح فيها الذكاء الاصطناعي أسئلة استكشافية تستخرج الخبرة الضمنية والاستثناءات وأسباب القرارات." },
   { icon: "🗺️", ar: "خريطة المعرفة الحرجة", en: "Critical Knowledge Mapping", p: "تحديد ما لا تستطيع الإدارة تحمل فقدانه، والعمليات التي تعتمد على خبير واحد." },
