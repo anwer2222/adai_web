@@ -41,7 +41,7 @@ export default function Home() {
       <nav className="nav">
         <div className="container">
           <a href="#" className="brand">
-            <Image src="/logo.jpg" alt="ADAI" width={42} height={42} />
+            <Image src="/logo_s.jpg" alt="ADAI" width={42} height={42} />
             <span className="en">ADAI</span>
           </a>
           <div className="nav-links">
@@ -58,7 +58,8 @@ export default function Home() {
 
       <header className="hero">
         <div className="container">
-          <Image className="hero-logo" src="/logo.jpg" alt="شعار ADAI" width={150} height={175} priority />
+          <Image className="hero-logo" src="/logo_s.jpg" alt="شعار ADAI" width={150} height={175} priority />
+          <h1>ADAI</h1>
           <div><span className="pill"><span className="en">AI Knowledge Management · SaaS</span></span></div>
           <h1>
             لا تدع خبرة موظفيك <span className="grad-text">تغادر معهم</span>
@@ -275,7 +276,7 @@ export default function Home() {
 
       <footer>
         <div className="container">
-          <span className="brand"><Image src="/logo.jpg" alt="" width={32} height={32} /> <span className="en">ADAI</span></span>
+          <span className="brand"><Image src="/logo_s.jpg" alt="" width={32} height={32} /> <span className="en">ADAI</span></span>
           <span>© {new Date().getFullYear()} ADAI — <span className="en">AI Knowledge Management</span></span>
         </div>
       </footer>

@@ -74,7 +74,7 @@ export default function OrgView() {
                 <line x1={cx} y1={cy + 12} x2={cx} y2={cy + 40} stroke={statusColor[r.status]} strokeWidth="2" strokeDasharray="3 3" />
                 <rect x={cx - 52} y={cy - 12} width="104" height="26" rx="13" fill="#fff" stroke={statusColor[r.status]} />
                 <circle cx={cx + 38} cy={cy + 1} r="5" fill={statusColor[r.status]} />
-                <text x={cx + 28} y={cy + 6} fontSize="12" fontWeight="700" fill="#12142b" textAnchor="end">{r.name}</text>
+                <text x={cx - 30} y={cy + 6} fontSize="12" fontWeight="700" fill="#12142b" textAnchor="end">{r.name}</text>
               </g>
             );
           })()}
@@ -84,7 +84,7 @@ export default function OrgView() {
         {(["ok", "warn", "risk"] as const).map((s, i) => (
           <g key={s} transform={`translate(${i * 110} 0)`}>
             <circle cx="6" cy="0" r="5" fill={statusColor[s]} />
-            <text x="16" y="4" textAnchor="start" direction="rtl">{statusLabel[s]}</text>
+            <text x="69" y="4" textAnchor="start" direction="rtl">{statusLabel[s]}</text>
           </g>
         ))}
       </g>

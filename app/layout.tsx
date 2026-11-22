@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title: "ADAI — الذاكرة المؤسسية الذكية",
   description:
     "ADAI منصة SaaS لإدارة المعرفة بالذكاء الاصطناعي: تستخلص خبرات موظفيك، وتحفظها كذاكرة مؤسسية معتمدة، وتضمن استمرارية المعرفة.",
-  icons: { icon: "/logo.jpg" },
+  icons: { icon: "/logo_s.jpg" },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
